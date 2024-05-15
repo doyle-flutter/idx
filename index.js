@@ -17,6 +17,8 @@ app.get('/api', (req, res) => {
   res.json({"msg": "Hello world"});
 });
 
+app.get('/james', (req,res) => res.json({james: 'dev'}));
+
 app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`);
 })
